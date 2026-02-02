@@ -1,0 +1,9 @@
+/* Força o fundo a ser Off-White em vez de branco puro */
+body {
+    background-color: #faf9f6 !important;
+}
+
+/* (Opcional) Deixa a área de leitura levemente mais focada */
+article {
+    background-color: #faf9f6 !important;
+}
