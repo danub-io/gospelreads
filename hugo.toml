@@ -1,0 +1,7 @@
+baseURL = 'https://gospelreads.com/'
+languageCode = 'pt-br'
+title = 'Gospel Reads'
+theme = 'blowfish'
+
+[params]
+  colorScheme = "blowfish" # Define o visual padrão do tema
