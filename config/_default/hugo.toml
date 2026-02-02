@@ -4,7 +4,7 @@
 
 theme = "blowfish"
 baseURL = "https://danub-io.github.io/gospelreads/"
-defaultContentLanguage = "en"
+defaultContentLanguage = "pt-br"
 disableLanguages = [] #to allow translation work requiring shipping to production
 
 # pluralizeListTitles = "true" # hugo function useful for non-english languages, find out more in  https://gohugo.io/getting-started/configuration/#pluralizelisttitles
