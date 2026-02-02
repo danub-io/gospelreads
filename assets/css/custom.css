@@ -1,9 +1,9 @@
-/* Força o fundo a ser Off-White em vez de branco puro */
-body {
-    background-color: #faf9f6 !important;
+:root {
+    --bg: #faf9f6 !important; /* Define a cor global */
 }
 
-/* (Opcional) Deixa a área de leitura levemente mais focada */
-article {
+body, html, header, footer, article {
     background-color: #faf9f6 !important;
+    background-image: none !important; /* Garante que o SVG morreu */
+    backdrop-filter: none !important;  /* Garante que o blur morreu */
 }
