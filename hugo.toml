@@ -1,7 +1,4 @@
-baseURL = 'https://gospelreads.com/'
+baseURL = 'https://danub-io.github.io/gospelreads/'
 languageCode = 'pt-br'
 title = 'Gospel Reads'
 theme = 'blowfish'
-
-[params]
-  colorScheme = "blowfish" # Define o visual padrão do tema
