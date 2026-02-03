@@ -1,14 +1,7 @@
 baseURL = "https://danub-io.github.io/gospelreads/"
 title = "Gospel Reads"
+languageCode = "pt-br"
 theme = "blowfish"
-defaultContentLanguage = "pt-br"
-
-# Configuração que faltava para corrigir o erro
-[languages]
-  [languages.pt-br]
-    languageName = "Português (Brasil)"
-    title = "Gospel Reads"
-    weight = 1
 
 enableRobotsTXT = true
 summaryLength = 30

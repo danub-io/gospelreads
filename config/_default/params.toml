@@ -6,6 +6,7 @@
 # https://blowfish.page/docs/configuration/#theme-parameters
 
 colorScheme = "blowfish"
+logo = "img/blowfish_logo_transparent.png"
 defaultAppearance = "light" # valid options: light or dark
 autoSwitchAppearance = false
 
