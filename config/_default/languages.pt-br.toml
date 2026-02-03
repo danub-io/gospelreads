@@ -1,7 +1,7 @@
 languageCode = "pt-br"
 languageName = "Português (Brasil)"
 weight = 6
-title = "Blowfish"
+title = "Gospel Reads"
 
 [params]
   displayName = "Português (Brasil)"
@@ -14,5 +14,5 @@ title = "Blowfish"
 [params.author]
   name = "Dan"
   image = "img/blowfish_logo.png"
-  headline = "GospelReads"
+  headline = "Gospel Reads"
   bio = "Reflexões e leituras."
