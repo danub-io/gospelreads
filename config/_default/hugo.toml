@@ -1,7 +1,10 @@
 baseURL = "https://danub-io.github.io/gospelreads/"
 title = "Gospel Reads"
-languageCode = "pt-br"
 theme = "blowfish"
+
+# Trava o site em Português
+languageCode = "pt-br"
+defaultContentLanguage = "pt-br"
 
 enableRobotsTXT = true
 summaryLength = 30
