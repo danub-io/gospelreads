@@ -3,6 +3,7 @@
 # https://blowfish.page/docs/getting-started/
 
 theme = "blowfish"
+title = "Gospel Reads"
 baseURL = "https://danub-io.github.io/gospelreads/"
 defaultContentLanguage = "pt-br"
 disableLanguages = [] #to allow translation work requiring shipping to production
