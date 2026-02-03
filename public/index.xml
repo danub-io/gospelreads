@@ -1,15 +1,23 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Blowfish</title>
-    <link>http://localhost:1313/</link>
-    <description>Recent content on Blowfish</description>
+    <title>Gospel Reads</title>
+    <link>https://danub-io.github.io/gospelreads/</link>
+    <description>Recent content on Gospel Reads</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <managingEditor>nuno@n9o.xyz (Blowfish)</managingEditor>
-    <webMaster>nuno@n9o.xyz (Blowfish)</webMaster>
-    <copyright>© 2026 Blowfish</copyright>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <language>pt-br</language>
+    <copyright>© 2026 Dan</copyright>
+    <lastBuildDate>Mon, 02 Feb 2026 20:28:36 -0300</lastBuildDate><atom:link href="https://danub-io.github.io/gospelreads/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Primeiro Post</title>
+      <link>https://danub-io.github.io/gospelreads/posts/primeiro-post/</link>
+      <pubDate>Mon, 02 Feb 2026 20:28:36 -0300</pubDate>
+      
+      <guid>https://danub-io.github.io/gospelreads/posts/primeiro-post/</guid>
+      <description>&lt;p&gt;teste&lt;/p&gt;</description>
+      
+    </item>
     
   </channel>
 </rss>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Gospel Reads</title>
+    <link>https://danub-io.github.io/gospelreads/posts/</link>
+    <description>Recent content in Posts on Gospel Reads</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-br</language>
+    <copyright>© 2026 Dan</copyright>
+    <lastBuildDate>Mon, 02 Feb 2026 20:28:36 -0300</lastBuildDate><atom:link href="https://danub-io.github.io/gospelreads/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Primeiro Post</title>
+      <link>https://danub-io.github.io/gospelreads/posts/primeiro-post/</link>
+      <pubDate>Mon, 02 Feb 2026 20:28:36 -0300</pubDate>
+      
+      <guid>https://danub-io.github.io/gospelreads/posts/primeiro-post/</guid>
+      <description>&lt;p&gt;teste&lt;/p&gt;</description>
+      
+    </item>
+    
+  </channel>
+</rss>

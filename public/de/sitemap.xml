@@ -3,253 +3,223 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
-    <loc>http://localhost:1313/de/authors/</loc>
+    <loc>https://danub-io.github.io/gospelreads/de/authors/</loc>
     <changefreq>always</changefreq>
-    <priority>0.5</priority>
     <xhtml:link
       rel="alternate"
-      hreflang="en"
-      href="http://localhost:1313/authors/"
-    />
-    <xhtml:link
-      rel="alternate"
-      hreflang="fr"
-      href="http://localhost:1313/fr/authors/"
-    />
-    <xhtml:link
-      rel="alternate"
-      hreflang="it"
-      href="http://localhost:1313/it/authors/"
-    />
-    <xhtml:link
-      rel="alternate"
-      hreflang="pt-pt"
-      href="http://localhost:1313/pt-pt/authors/"
+      hreflang="pt-br"
+      href="https://danub-io.github.io/gospelreads/authors/"
     />
     <xhtml:link
       rel="alternate"
       hreflang="es"
-      href="http://localhost:1313/es/authors/"
+      href="https://danub-io.github.io/gospelreads/es/authors/"
     />
     <xhtml:link
       rel="alternate"
-      hreflang="pt-br"
-      href="http://localhost:1313/pt-br/authors/"
+      hreflang="fr"
+      href="https://danub-io.github.io/gospelreads/fr/authors/"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="it"
+      href="https://danub-io.github.io/gospelreads/it/authors/"
     />
     <xhtml:link
       rel="alternate"
       hreflang="ja"
-      href="http://localhost:1313/ja/authors/"
+      href="https://danub-io.github.io/gospelreads/ja/authors/"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="pt-pt"
+      href="https://danub-io.github.io/gospelreads/pt-pt/authors/"
     />
     <xhtml:link
       rel="alternate"
       hreflang="zh-cn"
-      href="http://localhost:1313/zh-cn/authors/"
+      href="https://danub-io.github.io/gospelreads/zh-cn/authors/"
     />
     <xhtml:link
       rel="alternate"
       hreflang="de"
-      href="http://localhost:1313/de/authors/"
+      href="https://danub-io.github.io/gospelreads/de/authors/"
     />
   </url>
   <url>
-    <loc>http://localhost:1313/de/</loc>
+    <loc>https://danub-io.github.io/gospelreads/de/categories/</loc>
     <changefreq>always</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link
-      rel="alternate"
-      hreflang="en"
-      href="http://localhost:1313/"
-    />
-    <xhtml:link
-      rel="alternate"
-      hreflang="fr"
-      href="http://localhost:1313/fr/"
-    />
-    <xhtml:link
-      rel="alternate"
-      hreflang="it"
-      href="http://localhost:1313/it/"
-    />
-    <xhtml:link
-      rel="alternate"
-      hreflang="pt-pt"
-      href="http://localhost:1313/pt-pt/"
-    />
     <xhtml:link
       rel="alternate"
       hreflang="pt-br"
-      href="http://localhost:1313/pt-br/"
+      href="https://danub-io.github.io/gospelreads/categories/"
     />
     <xhtml:link
       rel="alternate"
       hreflang="es"
-      href="http://localhost:1313/es/"
+      href="https://danub-io.github.io/gospelreads/es/categories/"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="fr"
+      href="https://danub-io.github.io/gospelreads/fr/categories/"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="it"
+      href="https://danub-io.github.io/gospelreads/it/categories/"
     />
     <xhtml:link
       rel="alternate"
       hreflang="ja"
-      href="http://localhost:1313/ja/"
+      href="https://danub-io.github.io/gospelreads/ja/categories/"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="pt-pt"
+      href="https://danub-io.github.io/gospelreads/pt-pt/categories/"
     />
     <xhtml:link
       rel="alternate"
       hreflang="zh-cn"
-      href="http://localhost:1313/zh-cn/"
+      href="https://danub-io.github.io/gospelreads/zh-cn/categories/"
     />
     <xhtml:link
       rel="alternate"
       hreflang="de"
-      href="http://localhost:1313/de/"
+      href="https://danub-io.github.io/gospelreads/de/categories/"
     />
   </url>
   <url>
-    <loc>http://localhost:1313/de/categories/</loc>
+    <loc>https://danub-io.github.io/gospelreads/de/</loc>
     <changefreq>always</changefreq>
-    <priority>0.5</priority>
     <xhtml:link
       rel="alternate"
-      hreflang="en"
-      href="http://localhost:1313/categories/"
+      hreflang="pt-br"
+      href="https://danub-io.github.io/gospelreads/"
     />
     <xhtml:link
       rel="alternate"
       hreflang="fr"
-      href="http://localhost:1313/fr/categories/"
+      href="https://danub-io.github.io/gospelreads/fr/"
     />
     <xhtml:link
       rel="alternate"
       hreflang="it"
-      href="http://localhost:1313/it/categories/"
-    />
-    <xhtml:link
-      rel="alternate"
-      hreflang="pt-pt"
-      href="http://localhost:1313/pt-pt/categories/"
-    />
-    <xhtml:link
-      rel="alternate"
-      hreflang="es"
-      href="http://localhost:1313/es/categories/"
-    />
-    <xhtml:link
-      rel="alternate"
-      hreflang="pt-br"
-      href="http://localhost:1313/pt-br/categories/"
+      href="https://danub-io.github.io/gospelreads/it/"
     />
     <xhtml:link
       rel="alternate"
       hreflang="ja"
-      href="http://localhost:1313/ja/categories/"
+      href="https://danub-io.github.io/gospelreads/ja/"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="pt-pt"
+      href="https://danub-io.github.io/gospelreads/pt-pt/"
     />
     <xhtml:link
       rel="alternate"
       hreflang="zh-cn"
-      href="http://localhost:1313/zh-cn/categories/"
+      href="https://danub-io.github.io/gospelreads/zh-cn/"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="es"
+      href="https://danub-io.github.io/gospelreads/es/"
     />
     <xhtml:link
       rel="alternate"
       hreflang="de"
-      href="http://localhost:1313/de/categories/"
+      href="https://danub-io.github.io/gospelreads/de/"
     />
   </url>
   <url>
-    <loc>http://localhost:1313/de/series/</loc>
+    <loc>https://danub-io.github.io/gospelreads/de/series/</loc>
     <changefreq>always</changefreq>
-    <priority>0.5</priority>
     <xhtml:link
       rel="alternate"
-      hreflang="en"
-      href="http://localhost:1313/series/"
+      hreflang="pt-br"
+      href="https://danub-io.github.io/gospelreads/series/"
     />
     <xhtml:link
       rel="alternate"
       hreflang="fr"
-      href="http://localhost:1313/fr/series/"
+      href="https://danub-io.github.io/gospelreads/fr/series/"
     />
     <xhtml:link
       rel="alternate"
       hreflang="it"
-      href="http://localhost:1313/it/series/"
-    />
-    <xhtml:link
-      rel="alternate"
-      hreflang="pt-pt"
-      href="http://localhost:1313/pt-pt/series/"
-    />
-    <xhtml:link
-      rel="alternate"
-      hreflang="es"
-      href="http://localhost:1313/es/series/"
-    />
-    <xhtml:link
-      rel="alternate"
-      hreflang="pt-br"
-      href="http://localhost:1313/pt-br/series/"
+      href="https://danub-io.github.io/gospelreads/it/series/"
     />
     <xhtml:link
       rel="alternate"
       hreflang="ja"
-      href="http://localhost:1313/ja/series/"
+      href="https://danub-io.github.io/gospelreads/ja/series/"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="pt-pt"
+      href="https://danub-io.github.io/gospelreads/pt-pt/series/"
     />
     <xhtml:link
       rel="alternate"
       hreflang="zh-cn"
-      href="http://localhost:1313/zh-cn/series/"
+      href="https://danub-io.github.io/gospelreads/zh-cn/series/"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="es"
+      href="https://danub-io.github.io/gospelreads/es/series/"
     />
     <xhtml:link
       rel="alternate"
       hreflang="de"
-      href="http://localhost:1313/de/series/"
+      href="https://danub-io.github.io/gospelreads/de/series/"
     />
   </url>
   <url>
-    <loc>http://localhost:1313/de/tags/</loc>
+    <loc>https://danub-io.github.io/gospelreads/de/tags/</loc>
     <changefreq>always</changefreq>
-    <priority>0.5</priority>
     <xhtml:link
       rel="alternate"
-      hreflang="en"
-      href="http://localhost:1313/tags/"
-    />
-    <xhtml:link
-      rel="alternate"
-      hreflang="fr"
-      href="http://localhost:1313/fr/tags/"
-    />
-    <xhtml:link
-      rel="alternate"
-      hreflang="it"
-      href="http://localhost:1313/it/tags/"
-    />
-    <xhtml:link
-      rel="alternate"
-      hreflang="pt-pt"
-      href="http://localhost:1313/pt-pt/tags/"
+      hreflang="pt-br"
+      href="https://danub-io.github.io/gospelreads/tags/"
     />
     <xhtml:link
       rel="alternate"
       hreflang="es"
-      href="http://localhost:1313/es/tags/"
+      href="https://danub-io.github.io/gospelreads/es/tags/"
     />
     <xhtml:link
       rel="alternate"
-      hreflang="pt-br"
-      href="http://localhost:1313/pt-br/tags/"
+      hreflang="fr"
+      href="https://danub-io.github.io/gospelreads/fr/tags/"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="it"
+      href="https://danub-io.github.io/gospelreads/it/tags/"
     />
     <xhtml:link
       rel="alternate"
       hreflang="ja"
-      href="http://localhost:1313/ja/tags/"
+      href="https://danub-io.github.io/gospelreads/ja/tags/"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="pt-pt"
+      href="https://danub-io.github.io/gospelreads/pt-pt/tags/"
     />
     <xhtml:link
       rel="alternate"
       hreflang="zh-cn"
-      href="http://localhost:1313/zh-cn/tags/"
+      href="https://danub-io.github.io/gospelreads/zh-cn/tags/"
     />
     <xhtml:link
       rel="alternate"
       hreflang="de"
-      href="http://localhost:1313/de/tags/"
+      href="https://danub-io.github.io/gospelreads/de/tags/"
     />
   </url>
 </urlset>
