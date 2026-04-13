@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+@plugin "@tailwindcss/typography";
+
+@theme {
+  --color-brand: #0A66C2; /* LinkedIn Blue */
+  --color-brand-hover: #084c91;
+  
+  --font-heading: var(--font-playfair), serif;
+  --font-sans: var(--font-inter), sans-serif;
+  --font-serif: var(--font-lora), serif;
+
+  --color-background: #ffffff;
+  --color-foreground: #111111;
+  --color-muted: #f3f4f6;
+  --color-muted-foreground: #6b7280;
+  --color-border: #e5e7eb;
+}
+
+/* Base Styles */
+@layer base {
+  :root {
+    --background: var(--color-background);
+    --foreground: var(--color-foreground);
+  }
+
+  /* Dark mode support toggled by next-themes via .dark class */
+  .dark {
+    --color-background: #111111;
+    --color-foreground: #f9fafb;
+    --color-brand: #4a90e2; /* slightly lighter for dark mode */
+    --color-muted: #1f2937;
+    --color-muted-foreground: #9ca3af;
+    --color-border: #374151;
+  }
+
+  * {
+    @apply border-[var(--color-border)];
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    @apply font-sans antialiased selection:bg-brand selection:text-white;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading tracking-tight;
+  }
+}
+
+/* Custom Prose Styles for the Journal feel */
+.prose {
+  @apply max-w-2xl mx-auto;
+}
+
+.prose p {
+  @apply font-serif text-lg leading-relaxed text-foreground/90;
+}
+
+.prose h2, .prose h3, .prose h4 {
+  @apply font-heading text-foreground mt-8 mb-4;
+}
+
+.prose a {
+  @apply text-brand font-medium no-underline border-b border-brand/30 hover:border-brand transition-colors duration-200;
+}
+
+.prose blockquote {
+  @apply font-serif italic text-xl border-l-4 border-brand pl-6 my-8 text-foreground/80 bg-muted/30 py-4 pr-4 rounded-r-lg;
+}
+
+.prose img {
+  @apply rounded-lg shadow-sm w-full my-8;
+}
+
+.prose ul, .prose ol {
+  @apply font-serif text-lg leading-relaxed text-foreground/90 my-6;
+}
+
+.prose li {
+  @apply mb-2;
+}
+
+/* Utilities */
+.text-balance {
+  text-wrap: balance;
+}
