@@ -48,9 +48,11 @@ export function getPostSlugs() {
 
 export function getPostBySlug(slug: string): Post | null {
   const realSlug = slug.replace(/\.mdx?$/, '');
-  const fullPath = path.join(postsDirectory, `${realSlug}.md`);
-  
-  if (!fs.existsSync(fullPath)) return null;
+  const fullPath = path.resolve(postsDirectory, `${realSlug}.md`);
+
+  if (!fullPath.startsWith(path.resolve(postsDirectory) + path.sep) || !fs.existsSync(fullPath)) {
+    return null;
+  }
 
   const fileContents = fs.readFileSync(fullPath, 'utf8');
   const { data, content } = matter(fileContents);
@@ -79,9 +81,11 @@ export function getAuthorSlugs() {
 
 export function getAuthorBySlug(slug: string): Author | null {
   const realSlug = slug.replace(/\.mdx?$/, '');
-  const fullPath = path.join(authorsDirectory, `${realSlug}.md`);
-  
-  if (!fs.existsSync(fullPath)) return null;
+  const fullPath = path.resolve(authorsDirectory, `${realSlug}.md`);
+
+  if (!fullPath.startsWith(path.resolve(authorsDirectory) + path.sep) || !fs.existsSync(fullPath)) {
+    return null;
+  }
 
   const fileContents = fs.readFileSync(fullPath, 'utf8');
   const { data, content } = matter(fileContents);
