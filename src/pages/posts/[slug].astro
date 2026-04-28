@@ -1,0 +1,81 @@
+---
+import { getCollection, render } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+import { format } from 'date-fns';
+import { ptBR } from 'date-fns/locale';
+
+export async function getStaticPaths() {
+    const posts = await getCollection('posts');
+    return posts.map(post => ({
+        params: { slug: post.id },
+        props: { post },
+    }));
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+---
+
+<Layout title={post.data.title} description={post.data.description}>
+    <article class="max-w-3xl mx-auto py-8 md:py-16">
+        <header class="mb-12 text-center flex flex-col items-center">
+            {post.data.tags && post.data.tags.length > 0 && (
+                <span class="text-xs font-sans font-bold uppercase tracking-[0.2em] mb-6 text-slate-500 border-b border-black pb-1">
+                    {post.data.tags[0]}
+                </span>
+            )}
+
+            <h1 class="font-serif text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.1] tracking-tight mb-8">
+                {post.data.title}
+            </h1>
+
+            <p class="font-serif text-xl md:text-2xl text-slate-600 italic mb-8 max-w-2xl leading-relaxed">
+                {post.data.description}
+            </p>
+
+            <div class="flex items-center justify-center gap-4 text-sm font-sans border-t border-b border-slate-200 py-4 w-full max-w-lg mx-auto">
+                {post.data.authors && post.data.authors.length > 0 && (
+                    <span class="font-bold uppercase tracking-widest text-black">Por {post.data.authors[0]}</span>
+                )}
+                <span class="text-slate-300">|</span>
+                <span class="text-slate-600 uppercase tracking-widest">{format(post.data.date, "dd 'de' MMMM, yyyy", { locale: ptBR })}</span>
+            </div>
+        </header>
+
+        {post.data.image && (
+            <figure class="mb-16">
+                <img
+                    src={`/gospelreads${post.data.image}`}
+                    alt={post.data.image_alt || post.data.title}
+                    class="w-full h-auto grayscale"
+                />
+                {post.data.image_alt && (
+                    <figcaption class="text-xs font-sans text-right text-slate-500 mt-3 border-b border-slate-200 pb-3">
+                        {post.data.image_alt}
+                    </figcaption>
+                )}
+            </figure>
+        )}
+
+        <div class="prose prose-slate prose-lg md:prose-xl max-w-none font-serif
+            prose-headings:font-serif prose-headings:font-bold prose-headings:tracking-tight
+            prose-h2:text-3xl prose-h2:mt-12 prose-h2:mb-6
+            prose-p:leading-[1.8] prose-p:text-[#1a1c1c]
+            prose-a:font-semibold prose-a:underline prose-a:decoration-1 prose-a:underline-offset-4
+            prose-blockquote:font-serif prose-blockquote:italic prose-blockquote:text-2xl prose-blockquote:leading-snug prose-blockquote:border-l-4 prose-blockquote:border-black prose-blockquote:pl-6 prose-blockquote:py-2
+            prose-strong:font-bold prose-strong:text-black
+            prose-li:marker:text-black">
+            <Content />
+        </div>
+
+        <footer class="mt-20 pt-8 border-t-2 border-black flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="flex gap-4">
+                <a href="#" class="font-sans text-xs font-bold uppercase tracking-widest text-slate-500 hover:text-black transition-colors border border-slate-300 px-4 py-2">Compartilhar</a>
+                <a href="#" class="font-sans text-xs font-bold uppercase tracking-widest text-slate-500 hover:text-black transition-colors border border-slate-300 px-4 py-2">Salvar</a>
+            </div>
+            <a href="/gospelreads/" class="font-sans text-xs font-bold uppercase tracking-widest text-black hover:underline decoration-1 underline-offset-4">
+                &larr; Voltar ao Início
+            </a>
+        </footer>
+    </article>
+</Layout>
