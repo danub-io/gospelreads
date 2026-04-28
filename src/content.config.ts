@@ -1,5 +1,6 @@
-import { defineCollection, z } from "astro:content";
+import { defineCollection } from "astro:content";
 import { glob } from "astro/loaders";
+import { z } from "astro:schema";
 
 const posts = defineCollection({
   loader: glob({ pattern: "**/*.md", base: "./src/content/posts" }),
@@ -29,7 +30,7 @@ const authors = defineCollection({
           name: z.string(),
           icon: z.string(),
           link: z.string(),
-        }),
+        })
       )
       .optional(),
     draft: z.boolean().optional(),
