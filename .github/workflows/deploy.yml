@@ -1,33 +1,35 @@
-name: Deploy to Firebase Hosting
+name: Deploy to GitHub Pages
+
 on:
+  # Trigger the workflow every time you push to the `main` branch
+  # Using a different branch name? Replace `main` with your branch's name
   push:
-    branches: ["main"]
+    branches: [main, master]
+  # Allows you to run this workflow manually from the Actions tab on GitHub.
+  workflow_dispatch:
+
+# Allow this job to clone the repo and create a page deployment
+permissions:
+  contents: read
+  pages: write
+  id-token: write
 
 jobs:
-  build_and_deploy:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout your repository using git
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
+      - name: Install, build, and upload your site
+        uses: withastro/action@v3
 
-      - name: Setup Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-          cache: "npm"
-
-      - name: Install dependencies
-        run: npm ci
-
-      - name: Build Next.js
-        run: npm run build
-
-      - name: Deploy to Firebase Hosting
-        uses: FirebaseExtended/action-hosting-deploy@v0
-        with:
-          repoToken: "${{ secrets.GITHUB_TOKEN }}"
-          firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT_GOSPELREADS_FB00D }}"
-          channelId: live
-          projectId: gospelreads-64144831-fb00d
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
