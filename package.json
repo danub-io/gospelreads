@@ -1,5 +1,5 @@
 {
-  "name": "proud-phase",
+  "name": "gospelreads",
   "type": "module",
   "version": "0.0.1",
   "engines": {
@@ -19,8 +19,6 @@
     "@base-ui/react": "^1.4.1",
     "@tailwindcss/typography": "^0.5.19",
     "@tailwindcss/vite": "^4.2.4",
-    "@types/react": "^19.2.14",
-    "@types/react-dom": "^19.2.3",
     "astro": "^6.1.9",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
@@ -38,6 +36,8 @@
   "devDependencies": {
     "@astrojs/check": "^0.9.9",
     "@tailwindcss/postcss": "^4.2.4",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
     "autoprefixer": "^10.5.0",
     "postcss": "^8.5.12",
     "postcss-load-config": "^6.0.1",
