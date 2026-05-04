@@ -12,6 +12,11 @@
 - Teste quebrado: `content.ts` criado (módulo que o teste importava não existia)
 - `docs/` adicionado com índice de documentação
 
+### Documentação
+
+- `README.md` e `CONTRIBUTING.md` revisados e expandidos
+- Arquivos de convenção (`AGENTS.md`) padronizados com o ecossistema
+
 ## [0.1.0] - 2026-04-15
 
 ### Adicionado

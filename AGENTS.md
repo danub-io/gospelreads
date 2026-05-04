@@ -40,4 +40,4 @@ src/
 ## Detalhes
 - **Base URL:** `/gospelreads` (Firebase Hosting)
 - **Plugins:** MDX, RSS, Sitemap, Typography
-- **ShadCN:** variant mapping e estratégia seguem o global (~/.config/opencode/AGENTS.md)
+- **ShadCN:** variant mapping e estratégia seguem o global (~/.config/kilo/AGENTS.md)
